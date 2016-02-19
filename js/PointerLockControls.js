@@ -26,7 +26,7 @@ THREE.PointerLockControls = function(camera) {
   };
 
   document.addEventListener('mousemove', onMouseMove, false);
-  this.enabled = false;
+  this.enabled = true;//false;
 
   this.getObject = function() {
     return yawObject;

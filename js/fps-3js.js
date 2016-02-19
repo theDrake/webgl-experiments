@@ -21,7 +21,7 @@ if (havePointerLock) {
       controls.enabled = true;
       blocker.style.display = 'none';
     } else {
-      controls.enabled = false;
+      controls.enabled = true;//false;
       blocker.style.display = '-webkit-box';
       blocker.style.display = '-moz-box';
       blocker.style.display = 'box';
@@ -88,7 +88,7 @@ if (havePointerLock) {
 init();
 animate();
 
-var controlsEnabled = false;
+var controlsEnabled = true;//false;
 var moveForward = false;
 var moveBackward = false;
 var moveLeft = false;
