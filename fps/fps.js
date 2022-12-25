@@ -88,7 +88,7 @@ if (havePointerLock) {
 init();
 animate();
 
-var controlsEnabled = true;//false;
+var controlsEnabled = true;
 var moveForward = false;
 var moveBackward = false;
 var moveLeft = false;
@@ -159,7 +159,7 @@ function init() {
                                   0,
                                   10);
 
-  // Floor:
+  // floor
   geometry = new THREE.PlaneGeometry(2000, 2000, 100, 100);
   geometry.applyMatrix(new THREE.Matrix4().makeRotationX(-Math.PI / 2));
   for (var i = 0, l = geometry.vertices.length; i < l; i++) {
@@ -189,7 +189,7 @@ function init() {
   mesh = new THREE.Mesh(geometry, material);
   scene.add(mesh);
 
-  // Objects:
+  // objects
   geometry = new THREE.BoxGeometry(20, 20, 20);
   for (var i = 0, l = geometry.faces.length; i < l; i++) {
     var face = geometry.faces[ i ];
