@@ -26,13 +26,13 @@ THREE.PointerLockControls = function(camera) {
   };
 
   document.addEventListener('mousemove', onMouseMove, false);
-  this.enabled = true;//false;
+  this.enabled = true;
 
   this.getObject = function() {
     return yawObject;
   };
 
-  this.getDirection = function() { // assumes the camera itself is not rotated
+  this.getDirection = function() { // assumes camera itself is not rotated
     var direction = new THREE.Vector3(0, 0, -1);
     var rotation = new THREE.Euler(0, 0, 0, "YXZ");
     return function(v) {
